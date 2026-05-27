@@ -1,0 +1,88 @@
+class Platform {
+
+  attributes:
+    users: List
+    instructors: List
+
+}
+
+class User {
+
+  attributes:
+    id: int
+    name: String
+    email: String
+    phoneNumber: Long
+    enrollments: List
+}
+
+class Course {
+  attributes:
+    id: int
+    name: String
+    modules: List
+    price: double
+    instructors: List
+    description: String
+}
+
+class Lecture {
+  attributes:
+    id: int
+    name: String
+    video: String
+    references: List
+    description: String
+}
+
+class Module {
+  attributes:
+    id: int
+    name: String
+    lectures: List
+    description: String
+}
+
+class Instructor {
+  attributes:
+    id: int
+    name: String
+    email: String
+    phoneNumber: long
+    description: String
+    courses: List
+}
+
+class ReferenceMaterial {
+  attributes:
+    id: int
+    referenceType: ReferenceType
+    content: String
+}
+
+class Enrollment {
+  attributes:
+    id: int
+    course: Course
+    user: User
+    courseStatus: CourseStatus
+    rateCourse: int
+}
+
+class LectureProgress {
+  attributes:
+    enrollment: Enrollment
+    lecture: Lecture
+    watchedDurationInSecs: Long
+}
+
+enum ReferenceType {
+  URL
+  FILE_ATTACHMENT
+}
+
+enum CourseStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}
