@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.bmsbookticket.controllers.TestUserController
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.997 s - in com.example.bmsbookticket.controllers.TestUserController
