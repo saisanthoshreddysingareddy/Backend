@@ -1,0 +1,81 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------< org.example:qcommerce-match-partner-task-starter >----------
+[INFO] Building qcommerce-match-partner-task-starter 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ qcommerce-match-partner-task-starter ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ qcommerce-match-partner-task-starter ---
+[INFO] Changes detected - recompiling the module! :input tree
+[INFO] Compiling 19 source files with javac [debug release 17] to target/classes
+[WARNING] /config/workspace/src/main/java/com/example/qcommerce/models/PartnerTaskMapping.java:[8,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[WARNING] /config/workspace/src/main/java/com/example/qcommerce/models/Task.java:[8,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[WARNING] /config/workspace/src/main/java/com/example/qcommerce/models/Partner.java:[8,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ qcommerce-match-partner-task-starter ---
+[INFO] skip non existing resourceDirectory /config/workspace/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ qcommerce-match-partner-task-starter ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0:test (default-test) @ qcommerce-match-partner-task-starter ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.qcommerce.controllers.TestMatchPartnerTaskController
+10:42:21.361 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.qcommerce.controllers.TestMatchPartnerTaskController]: TestMatchPartnerTaskController does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:42:21.462 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.qcommerce.QCommerceApplication for test class com.example.qcommerce.controllers.TestMatchPartnerTaskController
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.3)
+
+2026-06-19T10:42:22.011Z  INFO 13761 --- [           main] c.e.q.c.TestMatchPartnerTaskController   : Starting TestMatchPartnerTaskController using Java 17.0.15 with PID 13761 (started by root in /config/workspace)
+2026-06-19T10:42:22.018Z  INFO 13761 --- [           main] c.e.q.c.TestMatchPartnerTaskController   : No active profile set, falling back to 1 default profile: "default"
+2026-06-19T10:42:23.041Z  INFO 13761 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-19T10:42:23.043Z  INFO 13761 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2026-06-19T10:42:23.106Z  INFO 13761 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.qcommerce.repositories.PartnerRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-06-19T10:42:23.112Z  INFO 13761 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.qcommerce.repositories.TaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-06-19T10:42:23.112Z  INFO 13761 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 0 JDBC repository interfaces.
+2026-06-19T10:42:23.125Z  INFO 13761 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-19T10:42:23.126Z  INFO 13761 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-19T10:42:23.168Z  INFO 13761 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2026-06-19T10:42:23.701Z  INFO 13761 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-19T10:42:23.879Z  INFO 13761 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bms user=SA
+2026-06-19T10:42:23.881Z  INFO 13761 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-19T10:42:23.938Z  INFO 13761 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-19T10:42:23.989Z  INFO 13761 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2026-06-19T10:42:23.991Z  INFO 13761 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-06-19T10:42:24.193Z  INFO 13761 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-06-19T10:42:24.367Z  INFO 13761 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-19T10:42:24.598Z  INFO 13761 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-06-19T10:42:25.341Z  INFO 13761 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-19T10:42:25.399Z  INFO 13761 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-19T10:42:25.877Z  WARN 13761 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-19T10:42:26.328Z  INFO 13761 --- [           main] c.e.q.c.TestMatchPartnerTaskController   : Started TestMatchPartnerTaskController in 4.714 seconds (process running for 5.836)
+Dummy data, partners: [Partner(name=Partner 1, currentLocation=Location(latitude=11.0, longitude=11.0)), Partner(name=Partner 2, currentLocation=Location(latitude=21.0, longitude=21.0)), Partner(name=Partner 3, currentLocation=Location(latitude=31.0, longitude=31.0))], tasks: [Task(customerId=1, pickupLocation=Location(latitude=10.0, longitude=10.0)), Task(customerId=2, pickupLocation=Location(latitude=20.0, longitude=20.0)), Task(customerId=3, pickupLocation=Location(latitude=30.0, longitude=30.0))]
+Dummy data, partners: [Partner(name=Partner 1, currentLocation=Location(latitude=11.0, longitude=11.0)), Partner(name=Partner 2, currentLocation=Location(latitude=21.0, longitude=21.0)), Partner(name=Partner 3, currentLocation=Location(latitude=31.0, longitude=31.0))], tasks: [Task(customerId=1, pickupLocation=Location(latitude=10.0, longitude=10.0)), Task(customerId=2, pickupLocation=Location(latitude=20.0, longitude=20.0)), Task(customerId=3, pickupLocation=Location(latitude=30.0, longitude=30.0))]
+Dummy data, partners: [Partner(name=Partner 1, currentLocation=Location(latitude=11.0, longitude=11.0)), Partner(name=Partner 2, currentLocation=Location(latitude=21.0, longitude=21.0)), Partner(name=Partner 3, currentLocation=Location(latitude=31.0, longitude=31.0))], tasks: [Task(customerId=1, pickupLocation=Location(latitude=10.0, longitude=10.0)), Task(customerId=2, pickupLocation=Location(latitude=20.0, longitude=20.0)), Task(customerId=3, pickupLocation=Location(latitude=30.0, longitude=30.0))]
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.38 s - in com.example.qcommerce.controllers.TestMatchPartnerTaskController
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.792 s
+[INFO] Finished at: 2026-06-19T10:42:27Z
+[INFO] ------------------------------------------------------------------------
