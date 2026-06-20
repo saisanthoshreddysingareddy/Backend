@@ -1,0 +1,13 @@
+/config/workspace/src/main/java/com/example/ecom/services/RecommendationsService.java
+/config/workspace/src/main/java/com/example/ecom/dtos/GenerateRecommendationsRequestDto.java
+/config/workspace/src/main/java/com/example/ecom/exceptions/ProductNotFoundException.java
+/config/workspace/src/main/java/com/example/ecom/models/ProductGroup.java
+/config/workspace/src/main/java/com/example/ecom/models/BaseModel.java
+/config/workspace/src/main/java/com/example/ecom/repositories/ProductGroupsRepository.java
+/config/workspace/src/main/java/com/example/ecom/services/RecommendationsServiceImpl.java
+/config/workspace/src/main/java/com/example/ecom/dtos/GenerateRecommendationsResponseDto.java
+/config/workspace/src/main/java/com/example/ecom/models/Product.java
+/config/workspace/src/main/java/com/example/ecom/EcomPlaceOrder.java
+/config/workspace/src/main/java/com/example/ecom/repositories/ProductRepository.java
+/config/workspace/src/main/java/com/example/ecom/dtos/ResponseStatus.java
+/config/workspace/src/main/java/com/example/ecom/controllers/RecommendationsController.java
