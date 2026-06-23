@@ -1,0 +1,114 @@
+class Learner {
+  attributes:
+    id: Integer
+    name: String
+    email: String
+    phoneNumber: String
+    batchHistory: List<LearnerBatch>
+}
+
+class Batch {
+  attributes:
+    batchId: Integer
+    learners: List<Learner>
+    lectures: List<Lecture>
+    batchSchedule: BatchSchedule
+}
+
+class BatchSchedule {
+  attributes:
+    batchScheduleId: Integer
+    days: List<Day>
+    time: LocalTime
+    when: MrngOrEvng
+}
+
+class Instructor {
+  attributes:
+    instructorId: Integer
+    name: String
+    email: String
+    phoneNumber: String
+    lecturesTaken: List<Lecture>
+}
+
+class Lecture {
+  attributes:
+    lectureId: Integer
+    lectureName: String
+    instructor: Instructor
+    batch: Batch
+    lectureStatus: LectureStatus
+    lectureRatings: List<LectureRating>
+}
+
+class LectureRating {
+  attributes:
+    lecture: Lecture
+    learner: Learner
+    learnerRating: double
+}
+
+class LearnerBatch {
+  attributes:
+    learner: Learner
+    batch: Batch
+    entryDate: Date
+    exitDate: Date
+    reason: LearnerBreak
+}
+
+
+enum MrngOrEvng {
+  MORNING
+  EVENING
+}
+
+enum LectureStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum LearnerBreak {
+  COURSE_PAUSE
+  ACTIVE
+  TIMING_ISSUE
+  NOT_TEACHING_WELL
+}
+
+
+Design Patterns -
+
+No design patterns are required at this stage. Strategy Pattern can be introduced.
+
+
+Relationships -
+
+Batch contains multiple Learners
+
+Batch contains one BatchSchedule
+
+Batch contains multiple Lectures
+
+Instructor takes multiple Lectures
+
+Lecture belongs to one Batch
+
+Lecture is taken by one Instructor
+
+Lecture contains multiple LectureRating entries
+
+LectureRating belongs to one Lecture
+
+LectureRating belongs to one Learner
+
+Learner contains multiple LearnerBatch entries
+
+LearnerBatch belongs to one Learner
+
+LearnerBatch belongs to one Batch
+
+A Learner can belong to multiple Batches over time through LearnerBatch history
+
+A Batch can contain multiple Learners over time through LearnerBatch history
