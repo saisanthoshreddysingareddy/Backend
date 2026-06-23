@@ -1,0 +1,70 @@
+class User {
+  attributes:
+    userId: Integer
+    name: String
+    phoneNumber: String
+}
+
+class UserPaid {
+  attributes:
+    id: Integer
+    user: User
+    paidAmount: double
+}
+
+class UserOwe {
+  attributes:
+    id: Integer
+    user: User
+    oweAmount: double
+}
+
+class Expense {
+  attributes:
+    id: Integer
+    expenseAmount: double
+    paidBy: List
+    participants: List
+
+}
+
+class NetAmount {
+  attributes:
+    id: Integer
+    user: User
+    netAmount: double
+}
+
+
+class Group {
+
+  attributes:
+    groupId: Integer
+    name: String
+    groupMembers: List
+    expensesList: List
+    groupCapacity: Integer
+    createdBy: User
+    usersNetAmount: List
+
+  methods:
+    settleUp(userNetAmount: List): void
+}
+
+
+Design Patterns - No design pattersn are required at this stage. Mostly strategy
+
+Relationships - 
+    Group contains multiple Users
+
+    Group contains multiple Expenses
+
+    Expense contains multiple UserPaid entries
+
+    Expense contains multiple UserOwe entries
+
+    UserPaid belongs to one User
+
+    UserOwe belongs to one User
+
+    NetAmount belongs to one User
