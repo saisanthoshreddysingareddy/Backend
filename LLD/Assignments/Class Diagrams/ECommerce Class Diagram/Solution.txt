@@ -1,0 +1,140 @@
+class Seller {
+  attributes:
+    id: Integer
+    name: String
+    address: Address
+    inventories: List
+    checkSeller: RegistrationStatus
+}
+
+class Product {
+  attributes:
+    id: Integer
+    name: String
+    price: double
+}
+
+class Buyer {
+  attributes:
+    id: Integer
+    name: String
+    checkBuyer: RegistrationStatus
+}
+
+class Cart {
+  attributes:
+    buyer: Buyer
+    cartItems: List
+}
+
+class CartItem {
+  attributes:
+    product: Product
+    quantity: Integer
+}
+
+class Order {
+  attributes:
+    id: Integer
+    buyer: Buyer
+    products: List
+    orderStatus: OrderStatus
+}
+
+class OrderItem {
+  attributes:
+    product: Product
+    quantity: Integer
+}
+
+class Inventory {
+  attributes:
+    id: Integer
+    product: Product
+    quantity: Integer
+}
+
+class OOSNotification {
+  attributes:
+    inventory: Inventory
+    buyer: Buyer
+}
+
+class Advertisement {
+  attributes:
+    id: Integer
+    product: Product
+    category: Category
+    linkToBuy: String
+    duration: double
+}
+
+class UserInterest {
+  attributes:
+    buyer: Buyer
+    interestedIn: List
+}
+
+enum RegistrationStatus {
+  REGISTERED
+  NOT_REGISTERED
+}
+
+enum OrderStatus {
+  SUCCESSFUL
+  CANCELLED
+  RETURNED
+}
+
+enum Category {
+  TECH
+  CLOTHING
+  FOOTWEAR
+  FOOD
+  BOOKS
+}
+
+Design Patterns - Observer Pattern can be used for Out Of Stock Notifications
+
+
+Relationships -
+
+Seller contains multiple Inventory entries
+
+Inventory belongs to one Product
+
+Buyer contains one Cart
+
+Cart contains multiple CartItem entries
+
+CartItem belongs to one Product
+
+Buyer can place multiple Orders
+
+Order contains multiple OrderItem entries
+
+OrderItem belongs to one Product
+
+Buyer can subscribe to multiple OOSNotification entries
+
+OOSNotification belongs to one Inventory
+
+OOSNotification belongs to one Buyer
+
+UserInterest belongs to one Buyer
+
+UserInterest contains multiple Categories
+
+Advertisement belongs to one Product
+
+Advertisement belongs to one Category
+
+A Seller can list multiple Products through Inventory
+
+A Buyer can add multiple Products to Cart
+
+A Buyer can buy multiple Products by placing an Order
+
+Multiple Buyers can subscribe for notifications on the same Inventory
+
+Advertisements are shown to Buyers based on their interested Categories
