@@ -11,7 +11,7 @@
 [INFO] 
 [INFO] --- compiler:3.11.0:compile (default-compile) @ question ---
 [INFO] Changes detected - recompiling the module! :input tree
-[INFO] Compiling 23 source files with javac [debug release 17] to target/classes
+[INFO] Compiling 21 source files with javac [debug release 17] to target/classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ question ---
 [INFO] skip non existing resourceDirectory /config/workspace/src/test/resources
@@ -27,8 +27,8 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.example.splitwise.controllers.TestGroupController
-07:27:49.029 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.splitwise.controllers.TestGroupController]: TestGroupController does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-07:27:49.139 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.splitwise.SplitwiseApplication for test class com.example.splitwise.controllers.TestGroupController
+07:38:34.510 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.splitwise.controllers.TestGroupController]: TestGroupController does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:38:34.630 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.splitwise.SplitwiseApplication for test class com.example.splitwise.controllers.TestGroupController
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -38,32 +38,32 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.2)
 
-2026-06-30T07:27:49.650Z  INFO 15288 --- [           main] c.e.s.controllers.TestGroupController    : Starting TestGroupController using Java 17.0.15 with PID 15288 (started by root in /config/workspace)
-2026-06-30T07:27:49.660Z  INFO 15288 --- [           main] c.e.s.controllers.TestGroupController    : No active profile set, falling back to 1 default profile: "default"
-2026-06-30T07:27:50.623Z  INFO 15288 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-30T07:27:50.715Z  INFO 15288 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 4 JPA repository interfaces.
-2026-06-30T07:27:51.302Z  INFO 15288 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-30T07:27:51.491Z  INFO 15288 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecom user=SA
-2026-06-30T07:27:51.493Z  INFO 15288 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-30T07:27:51.545Z  INFO 15288 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-30T07:27:51.591Z  INFO 15288 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2026-06-30T07:27:51.593Z  INFO 15288 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2026-06-30T07:27:51.745Z  INFO 15288 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2026-06-30T07:27:51.955Z  INFO 15288 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-30T07:27:52.232Z  INFO 15288 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2026-06-30T07:27:52.906Z  INFO 15288 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2026-06-30T07:27:52.984Z  INFO 15288 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-30T07:27:53.719Z  WARN 15288 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-30T07:27:54.069Z  INFO 15288 --- [           main] c.e.s.controllers.TestGroupController    : Started TestGroupController in 4.793 seconds (process running for 5.992)
-[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.682 s - in com.example.splitwise.controllers.TestGroupController
+2026-06-30T07:38:35.068Z  INFO 7901 --- [           main] c.e.s.controllers.TestGroupController    : Starting TestGroupController using Java 17.0.15 with PID 7901 (started by root in /config/workspace)
+2026-06-30T07:38:35.070Z  INFO 7901 --- [           main] c.e.s.controllers.TestGroupController    : No active profile set, falling back to 1 default profile: "default"
+2026-06-30T07:38:35.921Z  INFO 7901 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30T07:38:35.998Z  INFO 7901 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2026-06-30T07:38:36.536Z  INFO 7901 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30T07:38:36.783Z  INFO 7901 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecom user=SA
+2026-06-30T07:38:36.785Z  INFO 7901 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30T07:38:36.892Z  INFO 7901 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30T07:38:36.937Z  INFO 7901 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2026-06-30T07:38:36.939Z  INFO 7901 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-06-30T07:38:37.071Z  INFO 7901 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-06-30T07:38:37.218Z  INFO 7901 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-30T07:38:37.436Z  INFO 7901 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-06-30T07:38:38.152Z  INFO 7901 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30T07:38:38.221Z  INFO 7901 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30T07:38:38.940Z  WARN 7901 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30T07:38:39.395Z  INFO 7901 --- [           main] c.e.s.controllers.TestGroupController    : Started TestGroupController in 4.625 seconds (process running for 5.858)
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.179 s - in com.example.splitwise.controllers.TestGroupController
 [INFO] 
 [INFO] Results:
 [INFO] 
-[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  13.152 s
-[INFO] Finished at: 2026-06-30T07:27:55Z
+[INFO] Total time:  12.423 s
+[INFO] Finished at: 2026-06-30T07:38:40Z
 [INFO] ------------------------------------------------------------------------

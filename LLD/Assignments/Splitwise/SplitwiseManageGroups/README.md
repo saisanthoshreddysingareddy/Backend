@@ -4,33 +4,27 @@
 You are building web application similar to Splitwise. This functionality will be used by the users to manage groups.
 
 ## Requirements
-* We need to create 3 functionalities to support this feature.
-  1. Add member to a group
-  2. Remove member from a group
-  3. Get all members of a group
+We need to create 2 functionalities to support this feature.
+1. Create a group
+2. Delete a group
 
-1. Add member to a group
-* We will get group id, admin Id (user who is inviting the user) and user Id (user who is being invited) as input.
-* Only admins of a group can add members to the group.
-* Make sure to basic checks like whether the group exists, whether the admin is part of the group etc.
-* We need to create a new entry in the `group_members` table (GroupMember entity).
-* Return the group member object in response.
 
-2. Remove member from a group
-* We will get group id, admin Id (user who is removing the user) and user Id (user who is being removed) as input.
-* Only admins of a group can remove members from the group.
-* Make sure to basic checks like whether the group exists, whether the admin is part of the group etc.
-* We need to delete the entry from the `group_members` table (GroupMember entity).
+1. Create a group
+* We will get group name, group description and user Id (user who is creating the group) as input.
+* We need to create a new entry in the `groups` table (Group entity).
+* We need to create a new entry in the `group_admins` table (GroupAdmin entity) with the user creating the group as the admin.
+* Make sure to do basic checks like whether the user exists etc.
+* Return the group object in response
+
+2. Delete a group
+* We will get group id and user id (user trying to delete this group) as input.
+* Only admins of a group can delete the group.
+* Make sure to do basic checks like whether the group exists, whether the user is admin of the group etc.
+* Delete all the rows from the `group_members` table (GroupMember entity) for the given group id.
+* Delete all the rows from the `group_admins` table (GroupAdmin entity) for the given group id.
+* Delete the entry from the `groups` table (Group entity) for the given group id.
 * Return the status of the operation in response.
 
-3. Get all members of a group
-* We will get group id and user id (user trying to fetch this information) as input.
-* Only admins and members of a group can fetch the members of the group.
-* If a user is not part of the group, then we should throw UnAuthorizedException.
-* Make sure to basic checks like whether the group exists, whether the user is part of the group etc.
-* We need to fetch all the entries from the `group_members` table (GroupMember entity) for the given group id.
-* Also fetch all the entries from the `group_admins` table (GroupAdmin entity) for the given group id.
-* Return a combined list of all the members and admins of the group in response.
 
 ## Instructions
 1. Carefully look at the dtos package. These classes represent the request and response of the functionality which we want to implement.

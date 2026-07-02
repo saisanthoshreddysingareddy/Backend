@@ -4,13 +4,12 @@ import com.example.splitwise.models.Group;
 import com.example.splitwise.models.GroupAdmin;
 import com.example.splitwise.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
-import java.util.Optional;
-
+@Repository
 public interface GroupAdminRepository extends JpaRepository<GroupAdmin, Long> {
 
-    Optional<GroupAdmin> findByGroupAndAdmin(Group group, User admin);
+    boolean existsByGroupAndAdmin(Group group, User admin);
 
-    List<GroupAdmin> findByGroup(Group group);
+    void deleteAllByGroup(Group group);
 }
