@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="7">
+<mxfile host="app.diagrams.net" pages="10">
   <diagram id="QPByoL4LahIMFOotMc8d" name="ClientServerLB">
     <mxGraphModel dx="1918" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -666,7 +666,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="fEROza6JRnvz9tsKxqNn" name="LocalCache-Hit">
-    <mxGraphModel dx="1450" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1447" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -835,7 +835,7 @@
           <mxGeometry height="30" width="50" x="530" y="471" as="geometry" />
         </mxCell>
         <mxCell id="l3kzwBMmH_3y_NnSH5Uc-1" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/assets/databases/1/MySQL.svg;" value="DB" vertex="1">
-          <mxGeometry height="125" width="94.26" x="740" y="189.5" as="geometry" />
+          <mxGeometry height="125" width="94.26" x="790" y="189.5" as="geometry" />
         </mxCell>
         <mxCell id="l3kzwBMmH_3y_NnSH5Uc-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=1.008;entryY=0.816;entryDx=0;entryDy=0;entryPerimeter=0;" target="CSOS5kZa92s5igYt4brB-7" value="response">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -850,7 +850,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="aiBH0bTpiYRcsW67S-XX" name="LocalCache-Miss">
-    <mxGraphModel dx="1450" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1447" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1051,6 +1051,207 @@
         </mxCell>
         <mxCell id="8wDU3pBYcH7yq3-7vo92-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;• Local cache resides in the application server&#39;s RAM.&lt;/div&gt;&lt;div&gt;• On a cache miss, the application fetches data from the database.&lt;/div&gt;&lt;div&gt;• The retrieved data is stored in the server&#39;s local cache for future requests.&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="429" x="91" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="IFpDSvrdWYh_n7mrGcWj" name="S3 Upload">
+    <mxGraphModel dx="1015" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-44" parent="1" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png" value="Server 3" vertex="1">
+          <mxGeometry height="80" width="80" x="550" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-46" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/assets/databases/1/MySQL.svg;" value="Database" vertex="1">
+          <mxGeometry height="123" width="92.75" x="890" y="378.5" as="geometry" />
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-52" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" value="S3" vertex="1">
+          <mxGeometry height="93" width="76.5" x="740" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;Upload flow&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="230" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-57" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" value="Seller" vertex="1">
+          <mxGeometry height="78" width="78" x="240" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-58" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="iphone 17 details">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="430" as="sourcePoint" />
+            <mxPoint x="540" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-59" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="upload images, videos">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="610" y="410" as="sourcePoint" />
+            <mxPoint x="730" y="256.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-60" edge="1" parent="1" source="KVM5ux-1npsv_0ZzXCEl-44" style="endArrow=none;html=1;rounded=0;endFill=0;startArrow=classic;startFill=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" value="object url/ key">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="640" y="420" as="sourcePoint" />
+            <mxPoint x="760" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-61" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="store metadata+ s3 url">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="640" y="430" as="sourcePoint" />
+            <mxPoint x="880" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-62" edge="1" parent="1" source="KVM5ux-1npsv_0ZzXCEl-44" style="endArrow=none;html=1;rounded=0;endFill=0;startArrow=classic;startFill=1;exitX=1;exitY=0.625;exitDx=0;exitDy=0;exitPerimeter=0;" value="ACK">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="640" y="450" as="sourcePoint" />
+            <mxPoint x="880" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVM5ux-1npsv_0ZzXCEl-63" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;endFill=0;startArrow=classic;startFill=1;" value="response">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="328" y="450" as="sourcePoint" />
+            <mxPoint x="540" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="BMALbmqMSlkFH0RgzU1B" name="CDNCacheMiss">
+    <mxGraphModel dx="1865" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-1" parent="1" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png" value="Server 3" vertex="1">
+          <mxGeometry height="80" width="80" x="351" y="373.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-2" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/assets/databases/1/MySQL.svg;" value="Database" vertex="1">
+          <mxGeometry height="123" width="92.75" x="701" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-3" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" value="S3" vertex="1">
+          <mxGeometry height="93" width="76.5" x="611" y="160.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;S3 Read Flow - CDN Cache Miss&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="320" x="-89" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="CDN url">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-19" y="357" as="sourcePoint" />
+            <mxPoint x="81" y="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="request iphone 17 details">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="441" y="405" as="sourcePoint" />
+            <mxPoint x="691" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-10" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;endFill=0;startArrow=classic;startFill=1;exitX=1;exitY=0.625;exitDx=0;exitDy=0;exitPerimeter=0;" value="metadata+CDN urls">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="441" y="427" as="sourcePoint" />
+            <mxPoint x="691" y="427" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-11" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;endFill=0;startArrow=classic;startFill=1;exitX=1.022;exitY=0.62;exitDx=0;exitDy=0;exitPerimeter=0;" value="response">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-9.003999999999952" y="367.0000000000001" as="sourcePoint" />
+            <mxPoint x="191" y="247" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-12" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Web_browsers-2003/Chrome-1121.png;" value="Browser" vertex="1">
+          <mxGeometry height="93" width="93" x="-79" y="367" as="geometry" />
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="cache miss - get image">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="221" y="197" as="sourcePoint" />
+            <mxPoint x="597.51" y="197" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-14" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;startArrow=classic;startFill=1;endFill=0;" value="store in cdn">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="221" y="217" as="sourcePoint" />
+            <mxPoint x="601" y="217" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-16" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="91" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Nearest CDN Cache" vertex="1">
+          <mxGeometry height="30" width="92.75" x="104.61999999999999" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-22" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="iphone 17 details">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="21" y="407" as="sourcePoint" />
+            <mxPoint x="341" y="407" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ktcGz3-anm4SM-LZ0sY-23" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;endFill=0;startArrow=classic;startFill=1;" value="response">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="21" y="427" as="sourcePoint" />
+            <mxPoint x="341" y="427" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tyjINoIlz3uqeR2W-Jvc" name="S3 CDNCacheHit">
+    <mxGraphModel dx="1015" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-1" parent="1" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png" value="Server 3" vertex="1">
+          <mxGeometry height="80" width="80" x="570" y="492.5" as="geometry" />
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-2" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/assets/databases/1/MySQL.svg;" value="Database" vertex="1">
+          <mxGeometry height="123" width="92.75" x="920" y="471" as="geometry" />
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-3" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" value="S3" vertex="1">
+          <mxGeometry height="93" width="76.5" x="800" y="279.5" as="geometry" />
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;S3 Read Flow - CDN Cache Hit&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="320" x="80" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="CDN url">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="476" as="sourcePoint" />
+            <mxPoint x="300" y="356" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="request iphone 17 details">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="524" as="sourcePoint" />
+            <mxPoint x="910" y="524" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;endFill=0;startArrow=classic;startFill=1;exitX=1;exitY=0.625;exitDx=0;exitDy=0;exitPerimeter=0;" value="metadata+CDN urls">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="546" as="sourcePoint" />
+            <mxPoint x="910" y="546" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-8" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;endFill=0;startArrow=classic;startFill=1;exitX=1.022;exitY=0.62;exitDx=0;exitDy=0;exitPerimeter=0;" value="response">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="209.99600000000004" y="486.0000000000001" as="sourcePoint" />
+            <mxPoint x="410" y="366" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-9" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Web_browsers-2003/Chrome-1121.png;" value="Browser" vertex="1">
+          <mxGeometry height="93" width="93" x="140" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-12" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Nearest CDN Cache" vertex="1">
+          <mxGeometry height="30" width="92.75" x="323.62" y="311" as="geometry" />
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="iphone 17 details">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="526" as="sourcePoint" />
+            <mxPoint x="560" y="526" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0vwfVUAtlE5CBg1eKdu7-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;endFill=0;startArrow=classic;startFill=1;" value="response">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="546" as="sourcePoint" />
+            <mxPoint x="560" y="546" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
